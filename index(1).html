@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALE ❤️ INA</title>
+<style>
+body{margin:0;font-family:Segoe UI,sans-serif;background:linear-gradient(135deg,#ff8fb1,#ffd6e7);display:flex;align-items:center;justify-content:center;min-height:100vh;overflow:hidden}
+.card{background:#fff;padding:25px;border-radius:20px;max-width:800px;width:92%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+h1{color:#d81b60;font-size:42px;margin:0}
+video{width:100%;border-radius:15px;margin-top:20px}
+button{margin-top:20px;background:#d81b60;color:#fff;border:none;padding:12px 24px;border-radius:30px;font-size:18px;cursor:pointer}
+#msg{display:none;font-size:18px;line-height:1.8;color:#444;margin-top:20px}
+.heart{position:fixed;top:-30px;font-size:24px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh)}}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>ALE ❤️ INA</h1>
+<p>Untuk seseorang yang sangat berarti.</p>
+
+<!-- Ganti nama file video jika berbeda -->
+<video controls autoplay loop muted>
+  <source src="VID-20260318-WA0009.mp4" type="video/mp4">
+  Browser tidak mendukung video.
+</video>
+
+<!-- Untuk musik, letakkan file MP3 dengan nama:
+Every Breath You Take.mp3
+di folder yang sama dengan index.html -->
+<audio autoplay loop controls>
+  <source src="Every Breath You Take.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+<button onclick="document.getElementById('msg').style.display='block'">Buka Pesan ❤️</button>
+
+<div id="msg">
+<p>
+Hai INA,<br><br>
+Terima kasih telah hadir dalam hidupku. Bersamamu, hari-hariku terasa lebih indah.
+Semoga apa pun yang kita lalui menjadi cerita yang selalu bisa kita kenang bersama.
+<br><br>
+Aku mungkin tidak sempurna, tetapi perasaanku kepadamu selalu tulus.
+<br><br>
+<b>I love you today, tomorrow, and always. ❤️</b>
+</p>
+</div>
+</div>
+<script>
+setInterval(()=>{
+ let h=document.createElement('div');
+ h.className='heart';
+ h.textContent='❤️';
+ h.style.left=Math.random()*100+'vw';
+ h.style.animationDuration=(3+Math.random()*4)+'s';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),7000);
+},250);
+</script>
+</body>
+</html>
