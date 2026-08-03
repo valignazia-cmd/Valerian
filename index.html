@@ -2,33 +2,32 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALE ❤️ INA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="stars"></div>
-<div class="moon"></div>
-
-<div class="card">
+<div id="loading-screen"><div class="loader"><h2>Loading...</h2><p>Preparing a special surprise</p></div></div>
+<header id="hero">
+<div id="stars"></div><div id="moon"></div>
+<div class="hero-content">
+<p class="top-text">Every love story is beautiful...</p>
 <h1>ALE <span>❤️</span> INA</h1>
-<p class="quote">Every love story is beautiful, but ours is my favorite.</p>
-
-<button id="enter">💌 Enter</button>
-
-<div id="content" class="hidden">
-<video controls playsinline loop width="100%">
-<source src="VID-20260318-WA0009.mp4" type="video/mp4">
-</video>
-
-<audio id="music" loop>
-<source src="Every Breath You Take.mp3" type="audio/mpeg">
-</audio>
-
-<div id="letter"></div>
-</div>
-</div>
-
+<p class="subtitle">...but ours is my favorite.</p>
+<button id="enterBtn">Enter</button>
+<div class="scroll-down"><span>Scroll</span><div class="mouse"></div></div>
+</div></header>
+<section id="story"><div class="glass"><h2>Our Story</h2><p>Selamat datang di website ini ❤️</p></div></section>
+<section id="video-section">
+<h2>Our Memories</h2>
+<video controls playsinline><source src="VID-20260318-WA0009.mp4" type="video/mp4"></video>
+<audio id="bgMusic" loop><source src="Every Breath You Take.mp3" type="audio/mpeg"></audio>
+</section>
+<section id="letter"><div class="glass"><h2>For INA ❤️</h2><div id="typingText"></div></div></section>
+<section id="ending"><h2>Forever Starts Here</h2><button id="loveBtn">I Love You ❤️</button></section>
+<footer><p>Made with ❤️ by ALE</p></footer>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
