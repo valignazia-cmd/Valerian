@@ -5,12 +5,12 @@ const typingTarget = document.getElementById("typingText");
 
 const letter = `Hai Ina...
 
-Terima kasih sudah hadir dalam hidupku.
+Terima kasih ya kak inoy.
 
-Website kecil ini kubuat khusus untukmu.
-Semoga setiap kali kamu membukanya, kamu ingat bahwa ada seseorang yang selalu bersyukur memilikimu.
+Website kecil ini kubuat untuk ICEL.
+Semoga setiap kali waktu membukanya, kam ingat bahwa ada seseorang yang selalu bersyukur sama kakak.
 
-Aku mungkin tidak sempurna, tetapi aku akan selalu berusaha menjadi seseorang yang membuatmu merasa dicintai.
+ PALE akan selalu berusaha menjadi seseorang yang membuatmu merasa dicintai.
 
 ❤️ I Love You.
 - ALE`;
